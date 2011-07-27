@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.authors     = ["David Alber"]
   s.email       = ["alber.david@gmail.com"]
   s.homepage    = ""
-  s.summary     = %q{A drop-in replacement for open-uri (forked from rest-open-uri) for use in REST clients.}
+  s.summary     = %q{A replacement for open-uri (forked from rest-open-uri) for use in REST clients.}
   s.description = %q{rest-open-uri-postpatch is a slightly modified version of rest-open-uri. It fixes two issues with rest-open-uri: (1) redirects from a resource accessed with any method other than GET fails in rest-open-uri because it tries to use the same method as the original request; (2) rest-open-uri does not allow specification of content-type, which leads to warnings from net/http when doing a POST.}
 
   s.rubyforge_project = "rest-open-uri-postpatch"
