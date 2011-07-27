@@ -1,0 +1,7 @@
+rest-open-uri-postpatch is a slightly modified version of
+rest-open-uri. It fixes two issues with rest-open-uri:
+  - Redirects from a resource accessed with any method other than GET fails
+    in rest-open-uri because it tries to use the same method as the original
+    request. Now all requests with a method set use GET when doing a redirect.
+  - rest-open-uri does not allow specification of content-type, which leads
+    to warnings from net/http when doing a POST.
